@@ -56,11 +56,12 @@ src/
 ```
 
 ## Usage
-
+```text
  1.Connect your Arduino board
  2.Use the Blockly interface to create your LED control program
  3.Click "Generate Code" to see the Python code
  4.Run the generated code to control your Arduino
+```
 
 ## License
 MIT
