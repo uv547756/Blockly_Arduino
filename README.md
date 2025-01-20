@@ -37,19 +37,19 @@ A web-based visual programming interface for controlling Arduino LEDs using Bloc
 ## Project Structure
 
 src/
-├── lib/
-│   ├── blocks/
-│   │   └── ledBlocks.js
-│   ├── generators/
-│   │   └── pythonGenerators.js
-│   ├── config/
-│   │   └── toolbox.js
-│   └── utils/
-│       └── codeGenerator.js
-├── routes/
-│   └── +page.svelte
-└── styles/
-    └── global.css
+|-- lib/
+|   |-- blocks/
+|   |   |__ ledBlocks.js
+|   |-- generators/
+|   |   |__ pythonGenerators.js
+|   |-- config/
+|   |   |__ toolbox.js
+|   |-- utils/
+|       |__ codeGenerator.js
+|-- routes/
+|   |__ +page.svelte
+|-- styles/
+    |__ global.css
 
 ## Usage
 
