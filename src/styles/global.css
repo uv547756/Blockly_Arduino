@@ -58,3 +58,25 @@
     color: #333;
   }
 
+  .port-selector {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }    
+
+  .port-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+  }
+
+  label {
+    font-weight: 500;
+    color: #333;
+  }
+
+

@@ -14,7 +14,21 @@ export function setupPythonGenerators(pythonGenerator) {
     return `time.sleep(${delay})\n`;
   };
 
+  pythonGenerator.forBlock['button_led'] = function(block) {
+    const buttonPIN = block.getFieldValue("BUTTON_PIN");
+    const ledPIN = block.getFieldValue("LED_PIN");
+    const state = block.getFieldValue("STATE");
+
+    return `
+      board.digital[${buttonPIN}].mode = pyfirmata.INPUT
+      while True:
+          button_state == TRUE: 
+          if board.digital[${ledPIN}].write(${state})
+            board.digital[${ledPIN}].write(${state})
+          time.sleep(0.1)
+      `;
+    };
+
   pythonGenerator.addReservedWords('board');
 }
-
 

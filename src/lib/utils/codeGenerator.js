@@ -7,9 +7,10 @@ export function generateArduinoCode(workspace, pythonGenerator) {
     let imports = [];
     const blocks = workspace.getAllBlocks(false);
     const hasLEDBlocks = blocks.some(block =>
-      block.type === 'turn_on_led' || block.type === 'turn_off_led'
+      block.type === 'turn_on_led' || block.type === 'turn_off_led' || block.type == 'button_led'
     );
 
+    //only import if relevant blocks are used in workspace
     if (hasLEDBlocks) {
       imports = [
         'import pyfirmata\n import Arduino, util\n',

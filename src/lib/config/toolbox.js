@@ -83,8 +83,14 @@ export const toolbox = {
               {
                 "kind": "block",
                 "type": "delay"
+              },
+              {
+                "kind": "block",
+                "type": "button_led"
               }
+              
             ]
-        }
+        },
+        
       ]
 };
