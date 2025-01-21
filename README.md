@@ -36,8 +36,6 @@ A web-based visual programming interface for controlling Arduino LEDs using Bloc
 
 ## Project Structure
 
-## Project Structure
-
 ```text
 src/
 ├── lib/
